@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Slot } from './slot';
 
 @Component({
   moduleId: module.id,
@@ -6,21 +7,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: 'slot.component.html',
   styleUrls: ['slot.component.css']
 })
-export class SlotComponent implements OnInit {
 
-  startTime: Date;
-  endTime: Date;
-  title: String;
-  tracks: any[];
+export class SlotComponent {
+
+  @Input()
+  slot: Slot;
 
   constructor() {
-    this.startTime = new Date(2016, 8, 24, 8, 0, 0);
-    this.endTime = new Date(2016, 8, 24, 8, 30, 0);
-    this.title = 'Introduction';
-    this.tracks = [];
-  }
-
-  ngOnInit() {
   }
 
 }

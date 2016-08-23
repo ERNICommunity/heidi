@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { SlotComponent } from './slot/slot.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 @Component({
   moduleId: module.id,
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
-  directives: [SlotComponent]
+  directives: [ScheduleComponent]
 })
 
 export class AppComponent {

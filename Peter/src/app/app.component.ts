@@ -25,6 +25,6 @@ export class AppComponent implements OnInit {
   }
 
   removeEvent(event) {
-    this.model.splice(this.model.indexOf(event));
+    this.model.splice(this.model.indexOf(event), 1);
   }
 }

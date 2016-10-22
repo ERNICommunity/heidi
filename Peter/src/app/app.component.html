@@ -1,0 +1,5 @@
+<h1>
+  {{title}}
+</h1>
+<edd-event-list [events]="model" (onRemoveEvent)="removeEvent($event)"></edd-event-list>
+<input id="addEventBtn" type="button" class="btn" value="Add Event" (click)="addEvent()"/>

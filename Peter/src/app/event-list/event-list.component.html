@@ -1,0 +1,9 @@
+<ul class="event-list">
+  <li class="event-list-item" *ngFor="let eddEvent of events">
+    <div class="event-list-item-title">{{eddEvent.caption}}</div>
+    <div class="event-list-item-time">{{eddEvent.slot}}</div>
+    <div class="event-list-item-venue">{{eddEvent.venue}}</div>
+    <input class="btn-edit-event" type="button" value="Edit event" />
+    <input class="btn-delete-event" type="button" value="Remove event" (click)="removeEvent(eddEvent)" />
+  </li>
+</ul>

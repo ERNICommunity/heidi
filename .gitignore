@@ -33,6 +33,6 @@ testem.log
 Thumbs.db
 
 Clara/.vs
-Clara/bin
-Clara/obj
+Clara/**/bin
+Clara/**/obj
 Clara/**/*.user

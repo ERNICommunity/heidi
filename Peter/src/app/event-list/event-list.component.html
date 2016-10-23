@@ -3,7 +3,7 @@
     <div class="event-list-item-title">{{eddEvent.caption}}</div>
     <div class="event-list-item-time">{{eddEvent.slot}}</div>
     <div class="event-list-item-venue">{{eddEvent.venue}}</div>
-    <input class="btn-edit-event" type="button" value="Edit event" />
+    <input class="btn-edit-event" type="button" value="Edit event" (click)="editEvent(eddEvent)" />
     <input class="btn-delete-event" type="button" value="Remove event" (click)="removeEvent(eddEvent)" />
   </li>
 </ul>

@@ -8,7 +8,16 @@ import { EVENTS } from './mock-events';
 export class EventsService {
   constructor() { }
 
-  getEvents(): EddEvent[] {
+  getAllEvents(): EddEvent[] {
     return EVENTS;
+  }
+
+  getEvent(eventId) {
+    for(var counter = 0; counter < EVENTS.length; counter++){
+      if (EVENTS[counter].id === eventId) {
+        return EVENTS[counter];
+      }
+    }
+    EVENTS[0];
   }
 }
